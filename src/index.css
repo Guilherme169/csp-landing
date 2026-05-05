@@ -1,0 +1,64 @@
+:root {
+  --laranja: #f97316;
+  --laranja-hover: #ea580c;
+  --verde: #22c55e;
+  --verde-hover: #16a34a;
+
+  --texto: #111111;
+  --texto-medio: #374151;
+  --texto-leve: #6b7280;
+
+  --bg: #ffffff;
+  --bg-alt: #f8fafc;
+  --bg-dark: #111111;
+
+  --borda: #e5e7eb;
+  --borda-forte: #d1d5db;
+
+  --sombra-suave: 0 1px 3px rgba(0, 0, 0, 0.07), 0 4px 16px rgba(0, 0, 0, 0.06);
+  --sombra-card: 0 2px 8px rgba(0, 0, 0, 0.06), 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--texto);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  background: none;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}
