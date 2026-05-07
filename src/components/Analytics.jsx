@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const PIXEL_ID = '25266037166348151';
+const PIXEL_ID = '517991158551582';
 const CLARITY_ID = 'wnl4zs3pwt';
 
 export default function Analytics() {
