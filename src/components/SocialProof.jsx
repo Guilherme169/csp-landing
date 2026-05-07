@@ -1,4 +1,5 @@
 import VideoAutoPlay from './VideoAutoPlay';
+import mmfitLogo from '../assets/logo_mmfit.png';
 
 export default function SocialProof() {
   return (
@@ -59,21 +60,17 @@ export default function SocialProof() {
 
           {/* Client info */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <div style={{
-              width: '44px',
-              height: '44px',
-              borderRadius: '50%',
-              backgroundColor: 'var(--verde)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontWeight: 800,
-              fontSize: '14px',
-              color: '#ffffff',
-              flexShrink: 0,
-            }} aria-hidden="true">
-              MM
-            </div>
+            <img
+              src={mmfitLogo}
+              alt="MM Fit"
+              style={{
+                height: '44px',
+                width: 'auto',
+                objectFit: 'contain',
+                flexShrink: 0,
+                borderRadius: '8px',
+              }}
+            />
             <div>
               <p style={{ color: 'var(--texto)', fontWeight: 700, fontSize: '16px', marginBottom: '2px' }}>
                 MM Fit

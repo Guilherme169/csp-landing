@@ -61,7 +61,7 @@ export default function Hero() {
                 fontWeight: 700,
                 textTransform: 'uppercase',
                 letterSpacing: '2px',
-                marginBottom: '20px',
+                marginBottom: '10px',
               }}
             >
               Embalagens para marmitarias
@@ -69,24 +69,23 @@ export default function Hero() {
 
             <p
               style={{
-                fontSize: '18px',
-                fontWeight: 700,
-                color: 'var(--texto)',
-                marginBottom: '6px',
-                letterSpacing: '-0.2px',
+                fontSize: '13px',
+                fontWeight: 500,
+                color: 'var(--texto-leve)',
+                marginBottom: '2px',
               }}
             >
               Bem-vindo à CSP Embalagens.
             </p>
             <p
               style={{
-                fontSize: '15px',
-                color: 'var(--texto-medio)',
-                lineHeight: 1.6,
-                marginBottom: '20px',
+                fontSize: '14px',
+                color: 'var(--texto-leve)',
+                lineHeight: 1.5,
+                marginBottom: '24px',
               }}
             >
-              Mais do que embalagens, ajudamos sua marca a alcançar um novo nível de apresentação e destaque.
+              Mais apresentação e destaque para sua marca.
             </p>
 
             <h1

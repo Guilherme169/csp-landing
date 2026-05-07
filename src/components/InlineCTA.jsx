@@ -13,7 +13,7 @@ const mediaStyles = `
   }
 `;
 
-export default function InlineCTA({ text, href, scrollTo, bg = 'var(--bg)' }) {
+export default function InlineCTA({ text, href, scrollTo, bg = 'var(--bg)', topPadding = 0 }) {
   const [hovered, setHovered] = useState(false);
 
   const handleClick = scrollTo
@@ -41,7 +41,7 @@ export default function InlineCTA({ text, href, scrollTo, bg = 'var(--bg)' }) {
   return (
     <>
       <style>{mediaStyles}</style>
-      <section style={{ backgroundColor: bg, padding: '0 24px 56px', textAlign: 'center' }}>
+      <section style={{ backgroundColor: bg, padding: `${topPadding}px 24px 56px`, textAlign: 'center' }}>
         {href ? (
           <a
             href={href}
