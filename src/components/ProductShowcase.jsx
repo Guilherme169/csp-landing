@@ -67,12 +67,31 @@ export default function ProductShowcase() {
                 'Material resistente para congelados e delivery',
                 'Pedido mínimo a partir de 1.000 unidades',
                 'A partir de R$ 1,20 por unidade',
-              ].map((item) => (
-                <li key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
-                  <span style={{ color: 'var(--verde)', fontWeight: 700, fontSize: '16px', marginTop: '1px', flexShrink: 0 }}>✓</span>
-                  <span style={{ color: 'var(--texto-medio)', fontSize: '15px', lineHeight: 1.5 }}>{item}</span>
-                </li>
-              ))}
+              ].map((item) => {
+                const isPrice = item.includes('R$');
+                return isPrice ? (
+                  <li
+                    key={item}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      backgroundColor: 'rgba(34, 197, 94, 0.08)',
+                      border: '1.5px solid rgba(34, 197, 94, 0.3)',
+                      borderRadius: '10px',
+                      padding: '10px 14px',
+                    }}
+                  >
+                    <span style={{ color: 'var(--verde)', fontWeight: 700, fontSize: '18px', flexShrink: 0 }}>✓</span>
+                    <span style={{ color: '#15803d', fontSize: '16px', lineHeight: 1.5, fontWeight: 700 }}>{item}</span>
+                  </li>
+                ) : (
+                  <li key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+                    <span style={{ color: 'var(--verde)', fontWeight: 700, fontSize: '16px', marginTop: '1px', flexShrink: 0 }}>✓</span>
+                    <span style={{ color: 'var(--texto-medio)', fontSize: '15px', lineHeight: 1.5 }}>{item}</span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 

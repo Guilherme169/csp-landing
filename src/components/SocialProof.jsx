@@ -79,7 +79,7 @@ export default function SocialProof() {
                 MM Fit
               </p>
               <p style={{ color: 'var(--texto-leve)', fontSize: '14px' }}>
-                Marmitas Congeladas · POA e Região
+                Marmitas Congeladas · Porto Alegre, RS
               </p>
             </div>
           </div>

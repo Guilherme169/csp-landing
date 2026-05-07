@@ -6,7 +6,12 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5176)",
       "Bash(killall node *)",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Read(//tmp/**)"
     ]
   }
 }
