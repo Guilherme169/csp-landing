@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { track } from '../utils/pixel';
 
 const mediaStyles = `
   .inline-cta-btn {
@@ -13,15 +14,21 @@ const mediaStyles = `
   }
 `;
 
-export default function InlineCTA({ text, href, scrollTo, bg = 'var(--bg)', topPadding = 0 }) {
+export default function InlineCTA({ text, href, scrollTo, bg = 'var(--bg)', topPadding = 0, pixelEvents }) {
   const [hovered, setHovered] = useState(false);
+
+  const firePixelEvents = () => {
+    const events = Array.isArray(pixelEvents) ? pixelEvents : pixelEvents ? [pixelEvents] : [];
+    events.forEach((e) => track(e));
+  };
 
   const handleClick = scrollTo
     ? () => {
+        firePixelEvents();
         const el = document.getElementById(scrollTo);
         if (el) el.scrollIntoView({ behavior: 'smooth' });
       }
-    : undefined;
+    : () => firePixelEvents();
 
   const btnStyle = {
     padding: '14px 32px',
@@ -48,6 +55,7 @@ export default function InlineCTA({ text, href, scrollTo, bg = 'var(--bg)', topP
             target="_blank"
             rel="noopener noreferrer"
             className="inline-cta-btn"
+            onClick={firePixelEvents}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             style={btnStyle}

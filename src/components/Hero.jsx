@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { track } from '../utils/pixel';
 
 const mediaStyles = `
   .hero-section {
@@ -42,6 +43,7 @@ export default function Hero() {
   const [waCTAHovered, setWaCTAHovered] = useState(false);
 
   const scrollToForm = () => {
+    track('Lead');
     const el = document.getElementById('form');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
@@ -166,6 +168,7 @@ export default function Hero() {
                 href="https://wa.me/5551984304699"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => track('Contact')}
                 onMouseEnter={() => setWaCTAHovered(true)}
                 onMouseLeave={() => setWaCTAHovered(false)}
                 style={{

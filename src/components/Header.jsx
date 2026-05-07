@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { track } from '../utils/pixel';
 
 export default function Header() {
   const [hovered, setHovered] = useState(false);
@@ -35,6 +36,7 @@ export default function Header() {
         href="https://wa.me/5551984304699"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => track('Contact')}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{

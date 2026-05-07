@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { track } from '../utils/pixel';
 
 export default function CTA() {
   const [hovered, setHovered] = useState(false);
 
   const scrollToForm = () => {
+    track('Lead');
     const el = document.getElementById('form');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };

@@ -27,6 +27,7 @@ export default function Marmitas() {
           text="Quero personalizar minha embalagem"
           scrollTo="form"
           bg="var(--bg-alt)"
+          pixelEvents="Lead"
         />
 
         {/* 3. Identificação do problema */}
@@ -35,6 +36,7 @@ export default function Marmitas() {
           text="Quero orçar no WhatsApp"
           href={WA_LINK}
           bg="var(--bg)"
+          pixelEvents={['Lead', 'Contact']}
         />
 
         {/* 4. Diferença de uma embalagem profissional */}
@@ -49,6 +51,7 @@ export default function Marmitas() {
           text="Orçar e comprar agora"
           scrollTo="form"
           bg="var(--bg)"
+          pixelEvents="Lead"
         />
 
         {/* 5. Bastidores — valida profissionalismo após prova social */}
@@ -64,6 +67,7 @@ export default function Marmitas() {
           scrollTo="form"
           bg="var(--bg-alt)"
           topPadding={48}
+          pixelEvents="Lead"
         />
 
         {/* 6. CTA final */}
