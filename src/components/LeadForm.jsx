@@ -227,7 +227,7 @@ Vim pelo site da CSP.`;
               <input id="cidade" type="text" name="cidade" value={form.cidade}
                 onChange={handleChange} onFocus={() => setFocused('cidade')} onBlur={() => setFocused(null)}
                 style={inputStyle(focused === 'cidade')} required
-                placeholder="Ex: Porto Alegre/RS" autoComplete="address-level2" />
+                placeholder="Ex: sua cidade/estado" autoComplete="address-level2" />
             </div>
 
             <div style={fieldStyle}>

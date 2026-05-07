@@ -18,7 +18,7 @@ const mediaStyles = `
 `;
 
 const stats = [
-  { value: '+200', label: 'clientes atendidos' },
+  { value: '+2.000', label: 'clientes atendidos' },
   { value: '+1M', label: 'embalagens produzidas' },
   { value: '+15', label: 'anos no mercado' },
   { value: '🇧🇷', label: 'Atendemos todo Brasil' },

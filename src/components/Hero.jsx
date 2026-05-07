@@ -67,6 +67,28 @@ export default function Hero() {
               Embalagens para marmitarias
             </p>
 
+            <p
+              style={{
+                fontSize: '18px',
+                fontWeight: 700,
+                color: 'var(--texto)',
+                marginBottom: '6px',
+                letterSpacing: '-0.2px',
+              }}
+            >
+              Bem-vindo à CSP Embalagens.
+            </p>
+            <p
+              style={{
+                fontSize: '15px',
+                color: 'var(--texto-medio)',
+                lineHeight: 1.6,
+                marginBottom: '20px',
+              }}
+            >
+              Mais do que embalagens, ajudamos sua marca a alcançar um novo nível de apresentação e destaque.
+            </p>
+
             <h1
               className="hero-h1"
               style={{

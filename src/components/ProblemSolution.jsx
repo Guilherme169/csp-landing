@@ -80,7 +80,8 @@ export default function ProblemSolution() {
               letterSpacing: '-0.5px',
             }}
           >
-            Sua embalagem está travando seu negócio?
+            Sua empresa não está se destacando?{' '}
+            Talvez esteja faltando identidade para sua marca.
           </h2>
 
           <div className="ps-grid">
